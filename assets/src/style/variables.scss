@@ -1,5 +1,15 @@
 // Переопределение дефолтных значений переменных Bootstrap 4
+$primary: #39b54a;
+$font-family-base: Myriad Pro,  Arial, sans-serif;
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;
+$nav-link-padding-y: 0.75rem;
+$navbar-nav-link-padding-x: 1.125rem;
 
 // Свои переменные
+$header-navbar-bg: $primary;
+$animation-time-lg: 0.7s;
+$animation-time-md: 0.5s;
+$animation-time-sm: 0.3s;
 
 //$example: normal;

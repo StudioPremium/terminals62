@@ -6,8 +6,10 @@
 // Импортируем необходимые js-файлы Bootstrap 4
 
 //= ../../../node_modules/bootstrap/js/dist/util.js
-
+//модальное окно
 //= ../../../node_modules/bootstrap/js/dist/modal.js
+//Выпадающая кнопка
+//= ../../../node_modules/bootstrap/js/dist/dropdown.js
 
 
 // Импортируем Fancybox.js
