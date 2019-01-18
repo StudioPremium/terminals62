@@ -1,0 +1,55 @@
+.card {
+    &_product {
+		box-shadow: $card-product-box-shadow;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+
+            .card-body {
+                &_product {
+                    background-color: $primary-hover;
+                }
+            }
+
+            .card-img {
+                &_product {
+                    opacity: $opacity-hover;
+                    img {
+                    	transform: $scale-hover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-img {
+    &_product {
+    	overflow: hidden;
+        transition: $animation-time-lg;
+        img {
+            transition: $animation-time-lg;
+        }
+    }
+}
+
+.card-body {
+    &_product {
+        transition: $animation-time-lg;
+        background-color: $primary;
+    }
+    &_sm {
+		padding: 2rem;
+    }
+}
+
+.card-title {
+    &_product {
+        font-size: 0.875rem;
+        text-align: center;
+        color: white;
+        margin-bottom: 0;
+    }
+}
+
+

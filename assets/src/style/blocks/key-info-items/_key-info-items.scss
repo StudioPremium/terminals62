@@ -1,0 +1,23 @@
+.key-info-items {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.key-info-item {
+	width: calc(33.333% - 15px);
+	text-align: center;
+	margin-bottom: 2rem;
+	&__caption {
+		color: $primary-darken;
+		font-size: 3.75rem;
+		font-weight: normal;
+		margin-bottom: 0.3em;
+	}
+	&__text {
+		width: 50%;
+		margin: auto;
+	}
+}

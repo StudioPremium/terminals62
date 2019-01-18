@@ -1,15 +1,74 @@
-// Переопределение дефолтных значений переменных Bootstrap 4
+//ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ BOOTSTRAP 4 
+
+//главный цвет
 $primary: #39b54a;
+//главный шрифт
 $font-family-base: Myriad Pro,  Arial, sans-serif;
+//размер текста
+$font-size-base: 0.875rem;
+//падинги навигационной панели 
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
+//падинг кнопки навигационной панели по y
 $nav-link-padding-y: 0.75rem;
+//падинг кнопки навигационной панели по x
 $navbar-nav-link-padding-x: 1.125rem;
+//базовая высота строки
+$line-height-base: 1.2;
+//радиус заркругления картинки в карточке
+$card-inner-border-radius: 0;
+//радиус закругления карточки
+$card-border-radius: 0;
+//толщина рамки карточки
+$card-border-width: 0;
 
-// Свои переменные
+// ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 
+
+//шрифт стрелочек
+$slick-font-family: $font-family-base;
+//символы в стрелочках
+$slick-next-character: ' ';
+$slick-prev-character: ' ';
+
+// СВОИ ПЕРЕМЕННЫЕ
+
+//цвета
+// темный главный цвет
+$primary-darken: darken($primary, 15%);
+//светлый главный цвет
+$primary-lighten-bg: lighten($primary,40%);
+//главный цвет при наведении
+$primary-hover: $primary-darken;
+
+//хедер
+//фон навигационной панели
 $header-navbar-bg: $primary;
+
+//время анимации
+//в зависимости от размера экрана, подставляется одна из 3 переменных
 $animation-time-lg: 0.7s;
 $animation-time-md: 0.5s;
 $animation-time-sm: 0.3s;
 
-//$example: normal;
+//прозрачность
+//прозрачность при наведении
+$opacity-hover: 0.8;
+
+//масштабирование
+//увеличение при наведении
+$scale-hover: scale(1.2);
+
+//карточка
+// тень под карточкой товара
+$card-product-box-shadow: 0 0 15px $primary;
+
+//слайдер
+//пространство между itm слайдера и контентом
+$slider-itm-space-x: 15px;
+$slider-itm-space-y: 15px;
+//картинки стрелочек
+$slider-arrow-img-prev: url(../img/slider-arrow-prev.png);
+$slider-arrow-img-next: url(../img/slider-arrow-next.png);
+//высота стрелочек
+$slider-arrow-width: 43px;
+$slider-arrow-height: 84px;

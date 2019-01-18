@@ -1,8 +1,25 @@
-//Шрифты
+//ШРИФТЫ
 @import "fonts/fonts";
 
-//иконки
+//ИКОНКИ
 @import "icons/icons";
 
-//Блоки 
+//ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
+
+@import "pages/common/common";
+
+//БЛОКИ 
+
+//хедер
 @import "blocks/header/header";
+//ключевая информациея
+@import "blocks/key-info-items/key-info-items";
+//лайдер товара
+@import "blocks/slider-items/slider-items";
+//блок со слайдером товара
+@import "blocks/card/card";
+
+
+//СТРАНИЦЫ
+
+@import "pages/index/index";

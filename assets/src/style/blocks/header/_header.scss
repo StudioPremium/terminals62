@@ -1,13 +1,14 @@
 .header-navbar {
 	background-color: $header-navbar-bg;
 	.nav-link {
+		font-size: 1rem;
 		color: white;
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 1.5px;
 		transition: $animation-time-sm;
 		&:hover, &:focus {
-			background-color: darken($primary, 15%);
+			background-color: $primary-hover;
 		}
 	}
 }
@@ -31,7 +32,7 @@
 	    background-image: url();
 	    &:focus {
 	    	outline: none;
-	    	border-color: darken($primary, 15%);
+	    	border-color: $primary-hover;
 	    }
 	}
 }
