@@ -1,12 +1,18 @@
 //ШРИФТЫ
 @import "fonts/fonts";
 
+
 //ИКОНКИ
 @import "icons/icons";
 
+
 //ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ
 
-@import "pages/common/common";
+//типографика
+@import "typography/typography";
+//обычные стили страницы
+@import "common/common";
+
 
 //БЛОКИ 
 
@@ -14,7 +20,7 @@
 @import "blocks/header/header";
 //ключевая информациея
 @import "blocks/key-info-items/key-info-items";
-//лайдер товара
+//слайдер товара
 @import "blocks/slider-items/slider-items";
 //слайдер товара
 @import "blocks/card/card";

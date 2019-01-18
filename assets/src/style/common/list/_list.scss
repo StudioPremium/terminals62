@@ -1,0 +1,24 @@
+.list {
+	padding-left: 0;
+	margin-left: 0;
+	list-style: none;
+	margin-bottom: 2.25rem;
+	&__itm {
+		display: flex;
+		flex-direction: column;
+		background-repeat: no-repeat;
+		background-position: left center;
+		font-size: 0.875rem;
+		margin-bottom: 0.5rem;
+		padding: 0.5rem 0.5rem 0.5rem 0rem;
+		&_article {
+			background-image: url(../img/list-bg.png);
+			padding-left: 2.75rem;
+		}
+	}
+	&__link {
+		&_underline {
+			text-decoration: underline;
+		}
+	}
+}

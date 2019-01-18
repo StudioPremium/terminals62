@@ -1,0 +1,7 @@
+.section {
+	padding-top: 3.75rem;
+	padding-bottom: 5rem;
+	&_bg_primary {
+		background-color: $primary-lighten-bg;
+	}
+}

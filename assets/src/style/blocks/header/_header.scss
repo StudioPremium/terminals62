@@ -25,14 +25,15 @@
 		font-size: 0.875rem;
 		border: 1px solid $primary;
 		padding: 0.5rem 1.875rem;
-		border-top-left-radius: 30px;
-	    border-bottom-left-radius: 30px;
-	    border-top-right-radius: 30px;
-	    border-bottom-right-radius: 30px;
-	    background-image: url();
+		border-radius: 30px;
+	    transition: $animation-time-md;
+	    &:hover {
+	    	background-color: $primary-lighten-bg;
+	    }
 	    &:focus {
 	    	outline: none;
 	    	border-color: $primary-hover;
+	    	background-color: $primary-lighten-bg;
 	    }
 	}
 }
