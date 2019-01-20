@@ -25,6 +25,7 @@
 
 .card-img {
     &_product {
+        background-color: white;
     	overflow: hidden;
         transition: $animation-time-lg;
         img {

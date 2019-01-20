@@ -5,3 +5,56 @@
 	margin: auto;
 }
 
+.index-bg {
+	position: relative;
+	bottom: -126px;
+	img {
+		position: absolute;
+		bottom: 0;
+	}
+}
+.index-section_feedback-text {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	&__first {
+		margin-bottom: 0.83em;
+	}
+	&__second {
+		color: $primary;
+	}
+}
+
+.services__caption {
+	font-size: 1.5rem;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 3rem;
+	span {
+		color: $primary;
+	}
+}
+
+.services__items {
+	display: flex;
+	max-width: 86%;
+	margin: 0 auto;
+}
+
+
+.services-itm {
+	text-align: center;
+	flex: 33.3333% 0 0;
+	&__img  {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 126px;
+		margin-bottom: 1rem;
+	}
+	&__caption {
+		font-size: 1.125rem;
+	}
+}
+

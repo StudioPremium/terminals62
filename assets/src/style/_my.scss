@@ -10,7 +10,7 @@
 
 //типографика
 @import "typography/typography";
-//обычные стили страницы
+//обычные стили страницы типа главного баннера и др.
 @import "common/common";
 
 
@@ -18,15 +18,22 @@
 
 //хедер
 @import "blocks/header/header";
-//ключевая информациея
+//ключевая информация
 @import "blocks/key-info-items/key-info-items";
-//слайдер товара
+//слайдер 
 @import "blocks/slider-items/slider-items";
-//слайдер товара
+//карточка
 @import "blocks/card/card";
+//карточки новостей
+@import "blocks/card-news/card-news";
 //кнопка
 @import "blocks/btn/btn";
-
+//список
+@import "blocks/list/list";
+//дата
+@import "blocks/date/date";
+//ссылка
+@import "blocks/link/link";
 
 //СТРАНИЦЫ
 

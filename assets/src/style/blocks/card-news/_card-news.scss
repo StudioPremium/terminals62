@@ -1,0 +1,34 @@
+.card-news {
+ 	&__text {
+ 		margin-bottom: 2rem;
+ 	}
+ 	&_sm {
+ 		flex-direction: row;
+ 		justify-content: space-between;
+ 		align-items: flex-start;
+ 		margin-bottom: 1.5rem;
+ 		.card-img {
+ 			width: auto;
+ 			&_news {
+				flex: 50% 1 1;
+				padding-right: 15px;
+			}
+ 		}
+		.card-body_news {
+			flex: 50% 1 1;
+			padding-left: 15px;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+ 	}
+}
+
+
+.card-body_news {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.card-title_news {
+	font-size: 1rem;
+}

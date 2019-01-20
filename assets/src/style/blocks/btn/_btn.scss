@@ -1,3 +1,42 @@
-.btn {
-	box-shadow: $btn-box-shadow;
+.btn-primary {
+    box-shadow: $btn-box-shadow;
+}
+
+.btn-secondary {
+    border-color: $primary;
+    background-color: white;
+    color: $primary;
+    border-width: 2px;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(57, 181, 74, .5);
+    }
+
+    &:active {
+        background-color: $primary;
+        color: white;
+        border-color: $primary;
+        box-shadow: 0 0 0 0.2rem rgba(57, 181, 74, .5);
+    }
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary {
+    background-color: $primary;
+    color: white;
+    border-color: $primary;
+    box-shadow: 0 0 0 0.2rem rgba(57, 181, 74, .5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary:focus {
+	box-shadow: 0 0 0 0.2rem rgba(57, 181, 74, .5);
 }

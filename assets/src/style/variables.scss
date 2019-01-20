@@ -1,7 +1,7 @@
 //ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ BOOTSTRAP 4 
 
 //главный цвет
-$primary: #39b54a;
+$primary: rgb(57,181,74);
 //главный шрифт
 $font-family-base: Myriad Pro,  Arial, sans-serif;
 //размер текста
@@ -44,7 +44,7 @@ $slick-prev-character: ' ';
 // темный главный цвет
 $primary-darken: darken($primary, 15%);
 //светлый главный цвет
-$primary-lighten-bg: lighten($primary,40%);
+$primary-lighten-bg: lighten($primary,48%);
 //главный цвет при наведении
 $primary-hover: $primary-darken;
 
