@@ -29,6 +29,11 @@ $btn-padding-y: 1rem;
 $btn-padding-x: 4.5rem;
 //радиус закругления кнопки
 $btn-border-radius: 1.875rem;
+//футер модального окна
+$modal-footer-border-width: 0;
+//оступы в контент-контейнере модального окна
+$modal-inner-padding: 2rem 1rem;
+$modal-content-bg: rgba(255, 255, 255, 0.9);
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 
 
@@ -80,9 +85,62 @@ $slider-arrow-img-next: url(../img/slider-arrow-next.png);
 //высота стрелочек
 $slider-arrow-width: 43px;
 $slider-arrow-height: 84px;
+//положение стрелочек
+$slider-arrow-position: -100px;
 
 //кнопка
 $btn-box-shadow: 0px 6px 5px 0px rgba(30, 93, 39, 0.22);
 
 //текст
 $text-color-grey: rgb(66, 66, 66);
+
+//футер
+//цвет фона футера
+$footer-bg-color: #292f2c;
+$footer-color: rgb(234, 234, 234);
+
+//ссылка
+//белая ссылка
+$link-white-color: rgb(234, 234, 234);
+$link-white-color-hover: lighten($primary,40%);
+
+//модальное окно
+//фон инпутов 
+$modal-input-bg: #f8f8f8;
+//толщина границ
+$modal-input-border-width: 1px;
+//цвет границ
+$modal-input-border-color: #e1e1e1;
+//цвет текста
+$modal-input-color:  #757575;
+//отступы по x
+$modal-input-padding-x: 0.5rem;
+//отступы по y
+$modal-input-padding-y: 1rem;
+
+
+//медиа запросы
+//ширина окна
+$screen-width-lg: 1199px;
+$screen-width-md: 991px;
+$screen-width-sm: 767px;
+$screen-width-xs: 575px;
+
+//мобильное меню
+//ширина мобильного меню
+$mobile-menu-width: 250px;
+//цвет фона мобильного меню
+$mobile-menu-bg-color: #212529;
+$mobile-menu-header-bg-color: lighten($mobile-menu-bg-color,48%);
+// отступы в хедере мобильного меню
+$mobile-menu-header-padding-x: 1rem;
+$mobile-menu-header-padding-y: 0.625rem;
+// отступы в списке мобильного меню
+$mobile-menu-nav-link-padding-y: 1rem;
+$mobile-menu-nav-link-padding-x: 1rem;
+//цвет границ в навигации мобильного меню 
+$mobile-menu-nav-link-border-color: darken($mobile-menu-bg-color, 15%);
+//цвет текста навигации в мобильном меню
+$mobile-menu-nav-link-color: white;
+//цвет оверлея на body при открытия мобильного меню
+$mobile-menu-body-overlay: #212529;

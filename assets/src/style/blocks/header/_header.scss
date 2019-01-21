@@ -13,7 +13,14 @@
 	}
 }
 
+.navbar-toggler-icon {
+	background-image: url(../img/sprite.png);
+	background-size: auto;
+	background-position: -69px 3px;
+}
+
 .header-search {
+	position: relative;
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -24,7 +31,7 @@
 		font-weight: normal;
 		font-size: 0.875rem;
 		border: 1px solid $primary;
-		padding: 0.5rem 1.875rem;
+		padding: 0.625rem 3.125rem 0.75rem 1.875rem;
 		border-radius: 30px;
 	    transition: $animation-time-md;
 	    &:hover {
@@ -36,11 +43,21 @@
 	    	background-color: $primary-lighten-bg;
 	    }
 	}
+	&__icon {
+		position: absolute;
+		top: 6px; 
+		right: 24px;
+	}
 }
 
 
 .header-entry {
 	color: $primary;
+	display: flex;
+	align-items: center;
+	.icon {
+		margin-right: 1.125rem;
+	}
 	&__link {
 		margin-right: 3px;
 		text-decoration: underline;
@@ -50,3 +67,5 @@
 		}
 	}
 }
+
+@import "header-mediaqueries";

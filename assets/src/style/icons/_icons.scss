@@ -1,0 +1,16 @@
+.icon {
+	display: block;
+	background-repeat: no-repeat;
+	&_enter {
+		width: 24px;
+		height: 26px;
+		background-image: url(../img/sprite.png);
+		background-position: -4px -3px;
+	}
+	&_search {
+		width: 25px;
+		height: 25px;
+		background-image: url(../img/sprite.png);
+		background-position: -37px -2px;
+	}
+}

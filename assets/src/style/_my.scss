@@ -11,13 +11,18 @@
 //типографика
 @import "typography/typography";
 //обычные стили страницы типа главного баннера и др.
-@import "common/common";
 
 
 //БЛОКИ 
 
 //хедер
 @import "blocks/header/header";
+// главный баннер
+@import "blocks/main-banner/main-banner";
+// секции
+@import "blocks/section/section";
+// заголовки
+@import "blocks/caption/caption";
 //ключевая информация
 @import "blocks/key-info-items/key-info-items";
 //слайдер 
@@ -34,6 +39,12 @@
 @import "blocks/date/date";
 //ссылка
 @import "blocks/link/link";
+//футер
+@import "blocks/footer/footer";
+// модальное окно обратной связи
+@import "blocks/modal/modal";
+// мобильное меню
+@import "blocks/mobile-menu/mobile-menu";
 
 //СТРАНИЦЫ
 

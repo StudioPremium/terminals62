@@ -1,0 +1,52 @@
+.modal-header {
+	justify-content: center;
+	position: relative;
+	padding-right: 2rem;
+	.close {
+		right: 1rem;
+		top: 1rem;
+		position: absolute;
+	}
+}
+.modal-title {
+    font-size: 1.625rem;
+    text-align: center;
+}
+.modal-footer {
+	justify-content: center;
+}
+
+.modal-feedback {
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__input {
+		background: $modal-input-bg;
+		border: $modal-input-border-width solid $modal-input-border-color;
+		color: $modal-input-color;
+		padding: $modal-input-padding-y $modal-input-padding-x;
+		font-style: italic;
+		margin-bottom: 1rem;
+		transition: $animation-time-md;
+		outline: none;
+		&:last-child {
+			
+		}
+		&:hover {
+	    	background-color: $primary-lighten-bg;
+	    }
+	    &:focus {
+	    	border-color: $primary;
+	    	background-color: $primary-lighten-bg;
+	    }
+		&_textarea {
+			resize: none;
+		}
+	}
+}
+
+.modal-body {
+	padding-bottom: 0;
+}
+

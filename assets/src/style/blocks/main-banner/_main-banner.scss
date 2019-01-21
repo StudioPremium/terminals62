@@ -2,8 +2,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding-top: 60px;
-	padding-bottom: 100px;
+	padding-top: 3.75rem;
+	padding-bottom: 6rem;
 	outline: none;
 	&__caption {
 		font-size: 3rem;
@@ -18,3 +18,5 @@
 		color: $primary;
 	}
 }
+
+@import "main-banner-mediaqueries";

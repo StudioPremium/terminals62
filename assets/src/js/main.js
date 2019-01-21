@@ -18,11 +18,12 @@
 // Импортируем slick-carousel
 //= ../../../node_modules/slick-carousel/slick/slick.min.js
 
-// Импортируем owl-carousel.js
-//= ../../../node_modules/owl.carousel/dist/owl.carousel.min.js
+// Импортируем телефонную валидацию
+//= ../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js
 
 // Импортируем wow
 //= ../../../node_modules/wow.js/dist/wow.min.js
+
 
 // Импортируем другие js-файлы
 

@@ -38,6 +38,7 @@
 
 .services__items {
 	display: flex;
+	justify-content: space-between;
 	max-width: 86%;
 	margin: 0 auto;
 }
@@ -45,7 +46,7 @@
 
 .services-itm {
 	text-align: center;
-	flex: 33.3333% 0 0;
+	flex: calc(33.3333% - 30px) 0 0;
 	&__img  {
 		display: flex;
 		align-items: center;
@@ -58,3 +59,4 @@
 	}
 }
 
+@import "index-mediaqueries";

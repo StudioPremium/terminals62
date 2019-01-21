@@ -1,0 +1,55 @@
+@media (max-width: $screen-width-lg) {
+    .section-feedback {
+        &__form {
+            width: 70%;
+        }
+    }
+}
+@media (max-width: $screen-width-md) {
+    .section-feedback {
+        flex-direction: column;
+
+        &__form {
+        	margin-top: 2rem;
+            width: 100%;
+            padding-left: 0;
+        }
+
+        &__input {
+        	max-width: 450px;
+        }
+    }
+
+}
+
+@media (max-width: $screen-width-sm) {
+    .section-feedback {
+        &__caption {
+           text-align: center; 
+        }
+
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+    .section {
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+    }
+    .section-feedback {
+        &__caption {
+            font-size: 1.25rem;
+        }
+        &__form {
+            flex-direction: column;
+        }
+        &__input {
+            max-width: none;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+}

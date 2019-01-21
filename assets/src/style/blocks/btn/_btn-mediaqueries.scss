@@ -1,0 +1,8 @@
+@media (max-width: $screen-width-xs)  {
+	.btn {
+		padding: calc(#{$btn-padding-y} * 0.75}) calc(#{$btn-padding-x} * 0.75});
+	}
+	.btn-white {
+		padding: .375rem 3rem .25rem 3rem;
+	}
+}

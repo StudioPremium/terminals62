@@ -1,0 +1,18 @@
+@media (max-width: $screen-width-md) {
+	.main-banner {
+		&__content {
+			padding-left: 0;
+		}
+	}
+}
+
+@media (max-width: $screen-width-xs) {
+	.main-banner {
+		background-position: left;
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+		&__caption {
+			font-size: 2rem;
+		}
+	}
+}

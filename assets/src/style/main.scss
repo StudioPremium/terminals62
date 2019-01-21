@@ -24,17 +24,15 @@
 // выпадающее меню
 @import "../../../node_modules/bootstrap/scss/dropdown";
 
-
-// CSS для owl-carousel
-@import "../../../node_modules/owl.carousel/dist/assets/owl.carousel.min";
-@import "../../../node_modules/owl.carousel/dist/assets/owl.theme.default.min";
-
 // Служебные файлы для fancybox
 @import "../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 // CSS для slick-carousel
 @import "../../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// animateCSS
+@import "../../../node_modules/animate.css/animate.css";
 
 
 // Подключение своих SCSS файлов

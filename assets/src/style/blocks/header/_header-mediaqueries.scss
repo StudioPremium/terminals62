@@ -1,0 +1,17 @@
+@media (max-width: $screen-width-lg) {
+	.header-navbar {
+		background-color: lighten($primary,100%);
+	}
+}
+@media (max-width: $screen-width-sm) {
+	.header-search {
+		&__input {
+			max-width: none;
+		}
+	}
+}
+@media (max-width: 450px) {
+	.header-entry .icon {
+		display: none;
+	}
+}

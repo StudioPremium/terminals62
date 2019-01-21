@@ -1,0 +1,25 @@
+<div class="modal modal-feedback fade" id="modalFeedback" tabindex="-1" role="dialog" aria-labelledby="modalFeedbackLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalFeedbackLabel">Получить консультацию</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-feedback">
+                  <form name="feedbackForm" action="feedback.php" class="modal-feedback__form" id="modalFeedbackForm">
+                    <input name="feedbackName" type="text" class="modal-feedback__input" placeholder="Ваше имя" required>
+                    <input name="feedbackPhone" type="tel" class="modal-feedback__input" placeholder="Ваш телефон" required>
+                    <textarea name="feedbackMessage" rows="5" class="modal-feedback__input modal-feedback__input_textarea" placeholder="Напишите сообщение"></textarea>
+                  </form>
+                </div>
+                <span>Отправляя данные я подтверждаю <a href="#">согласие</a> на обработку персональных данных</span>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="modalFeedbackForm" class="btn btn-primary">Оставить заявку</button>
+            </div>
+        </div>
+    </div>
+</div>

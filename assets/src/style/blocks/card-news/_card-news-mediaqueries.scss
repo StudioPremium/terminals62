@@ -1,0 +1,20 @@
+@media (max-width: $screen-width-xs) {
+	.card-news {
+
+		&_sm {
+			flex-direction: column;
+			.card-body {
+				&_news {
+					padding-left: 0;
+				}
+			}
+			.card-img {
+				&_news {
+					width: 100%;
+					padding-right: 0;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}

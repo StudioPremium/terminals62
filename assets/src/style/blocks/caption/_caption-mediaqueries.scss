@@ -1,0 +1,12 @@
+@media (max-width: $screen-width-xs) {
+    .caption {
+        &__text {
+            &_underline {
+                margin-left: 0;
+            }
+        }
+        &_section {
+        	font-size: 1.5rem;
+        }
+    }
+}

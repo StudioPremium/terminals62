@@ -1,0 +1,43 @@
+@media (max-width: $screen-width-lg) {
+
+    .slick-prev,
+    .slick-next {
+        width: calc(#{$slider-arrow-width} * 0.75);
+        height: calc(#{$slider-arrow-height} * 0.75);
+    }
+    .slick-prev {
+        left: calc(#{$slider-arrow-position} * 0.5);
+    }
+    .slick-next {
+        right:  calc(#{$slider-arrow-position} * 0.5);
+    }
+}
+
+@media (max-width: $screen-width-sm) {
+
+    .slick-prev,
+    .slick-next {
+        width: calc(#{$slider-arrow-width} * 0.5);
+        height: calc(#{$slider-arrow-height} * 0.5);
+    }
+    .slick-prev {
+        left: calc(#{$slider-arrow-position} * 0.25);
+    }
+    .slick-next {
+        right:  calc(#{$slider-arrow-position} * 0.25);
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+    .slick-prev,
+    .slick-next {
+        width: calc(#{$slider-arrow-width} * 0.35);
+        height: calc(#{$slider-arrow-height} * 0.35);
+    }
+    .slick-prev {
+        left: calc(#{$slider-arrow-position} * 0.16);
+    }
+    .slick-next {
+        right:  calc(#{$slider-arrow-position} * 0.16);
+    }
+}

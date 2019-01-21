@@ -25,6 +25,9 @@
 	background-position: center;
 	background-repeat: no-repeat;
     &:hover, &:focus {
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
         &:before {
             opacity: $slick-opacity-on-hover;
         }
@@ -38,7 +41,7 @@
 }
 
 .slick-prev {
-    left: -100px;
+    left: $slider-arrow-position;
     background-image: $slider-arrow-img-prev;
     &:hover, &:focus {
         background-image: $slider-arrow-img-prev;
@@ -46,9 +49,11 @@
 }
 
 .slick-next {
-    right: -100px;
-   	background-image: url(../img/slider-arrow-next.png);
+    right: $slider-arrow-position;
+   	background-image: $slider-arrow-img-next;
     &:hover, &:focus {
-        background-image: url(../img/slider-arrow-next.png);
+        background-image: $slider-arrow-img-next;
     }
 }
+
+@import "slider-items-mediaqueries";
