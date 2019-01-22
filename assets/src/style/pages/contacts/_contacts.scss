@@ -1,0 +1,48 @@
+.contacts-content {
+	display: flex;
+	&__part {
+		width: 50%;
+		&_left {
+			width: 39%;
+			padding-right: 15px;
+		}
+		&_right {
+			width: 61%;
+			padding-left: 15px;
+		}
+	}
+}
+
+.contacts-box {
+	margin-bottom: 1.5rem;
+	&__caption {
+		font-size: 1.125rem;
+		margin-bottom: 1rem;
+	}
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__itm {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+	&__text {
+		font-size: 0.875rem;
+	}
+}
+
+.contacts-feedback {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.contacts-feedback__caption {
+	font-size: 1.125rem;
+	font-style: italic;
+	font-weight: normal;
+	.color {
+		color: $primary;
+	}
+}

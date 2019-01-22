@@ -6,6 +6,7 @@
 	&__itm {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		background-repeat: no-repeat;
 		background-position: left center;
 		font-size: 0.875rem;
@@ -14,6 +15,13 @@
 		&_article {
 			background-image: url(../img/list-bg.png);
 			padding-left: 2.75rem;
+		}
+		&_question {
+			font-size: 1rem;
+			font-weight: bold;
+			background-image: url(../img/list-bg-2.png);
+			padding:16px 0.5rem 18px 64px;
+			margin-bottom: 0.875rem;
 		}
 	}
 }

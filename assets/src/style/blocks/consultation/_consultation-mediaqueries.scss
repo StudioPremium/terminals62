@@ -1,0 +1,9 @@
+@media (max-width: $screen-width-md)  {
+	.consultation {
+		&_sm {
+			min-height: 350px;
+			background-position-x: right;
+			margin-bottom: 2rem;
+		}
+	}
+}

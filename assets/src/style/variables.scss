@@ -33,7 +33,21 @@ $btn-border-radius: 1.875rem;
 $modal-footer-border-width: 0;
 //оступы в контент-контейнере модального окна
 $modal-inner-padding: 2rem 1rem;
+// фон модального окна
 $modal-content-bg: rgba(255, 255, 255, 0.9);
+//отступы хлебных крошек
+$breadcrumb-padding-y: 0.5rem;
+$breadcrumb-padding-x: 0;
+//фон хлебных крошек
+$breadcrumb-bg: transparent;
+//цвет кнопок пагинации
+$pagination-bg:  rgb(194, 194, 194);
+//цвет текста кнопок пагинации
+$pagination-color: white;
+// отступы кнопок навигации
+$pagination-padding-y: 0.4375rem;
+
+
 
 // ПЕРЕОПРЕДЕЛЕНИЕ ДЕФОЛТНЫХ ЗНАЧЕНИЙ ПЕРЕМЕННЫХ SLICK-SLIDER 
 
@@ -105,19 +119,20 @@ $link-white-color: rgb(234, 234, 234);
 $link-white-color-hover: lighten($primary,40%);
 
 //модальное окно
-//фон инпутов 
-$modal-input-bg: #f8f8f8;
-//толщина границ
-$modal-input-border-width: 1px;
-//цвет границ
-$modal-input-border-color: #e1e1e1;
-//цвет текста
-$modal-input-color:  #757575;
-//отступы по x
-$modal-input-padding-x: 0.5rem;
-//отступы по y
-$modal-input-padding-y: 1rem;
 
+//форма
+// 
+$input-bg: #f8f8f8;
+//толщина границ
+$input-border-width: 1px;
+//цвет границ
+$input-border-color: #e1e1e1;
+//цвет текста
+$input-color:  #757575;
+//отступы по x
+$input-padding-x: 0.5rem;
+//отступы по y
+$input-padding-y: 0.75rem;
 
 //медиа запросы
 //ширина окна
@@ -144,3 +159,16 @@ $mobile-menu-nav-link-border-color: darken($mobile-menu-bg-color, 15%);
 $mobile-menu-nav-link-color: white;
 //цвет оверлея на body при открытия мобильного меню
 $mobile-menu-body-overlay: #212529;
+
+//боковое меню
+$aside-menu-header-bg-color: $primary;
+$aside-menu-header-color: white;
+$aside-menu-header-padding-x: 1rem;
+$aside-menu-header-padding-y: 0.75rem;
+$aside-menu-link-bg-color: $primary-lighten-bg;
+$aside-menu-link-bg-color-active: $primary;
+$aside-menu-link-padding-y: 0.6875rem;
+$aside-menu-link-padding-x: 1.3125rem;
+$aside-menu-space-bottom: 1rem;
+$aside-menu-itm-space-bottom: 0.5rem;
+

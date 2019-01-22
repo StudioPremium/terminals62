@@ -1,0 +1,32 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	&__input {
+		width: 100%;
+		background: $input-bg;
+		border: $input-border-width solid $input-border-color;
+		color: $input-color;
+		padding: $input-padding-y $input-padding-x;
+		font-style: italic;
+		transition: $animation-time-md;
+		outline: none;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:hover {
+	    	background-color: $primary-lighten-bg;
+	    }
+	    &:focus {
+	    	border-color: $primary;
+	    	background-color: white;
+	    }
+		&_textarea {
+			resize: none;
+		}
+		&_space {
+			margin-bottom: 1rem;
+		}
+	}
+}

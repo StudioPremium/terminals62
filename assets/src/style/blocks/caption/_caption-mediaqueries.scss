@@ -1,12 +1,31 @@
 @media (max-width: $screen-width-xs) {
     .caption {
+        &_underline {
+            text-align: center;
+        }
+
         &__text {
             &_underline {
+                display: inline-block;
+                width: 100%;
                 margin-left: 0;
+
+                &:before {
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                }
+
+                &:after {
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                }
             }
         }
+
         &_section {
-        	font-size: 1.5rem;
+            font-size: 1.5rem;
         }
     }
 }

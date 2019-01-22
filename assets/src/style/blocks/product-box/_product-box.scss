@@ -1,0 +1,46 @@
+.product-box {
+    display: flex;
+	&_space {
+		margin-top: 2rem;
+		margin-bottom: 5.25rem;
+	}
+    &__part {
+        &_left {
+        	width: 53%;
+        	padding-right: 15px;
+        }
+        &_right {
+        	padding-left: 15px;
+			width: 47%;
+        }
+    }
+
+    &__img {}
+
+    &__price {
+		font-size: 3rem;
+		font-weight: bold;
+		color: $primary;
+		display: inline-block;
+		margin-bottom: 2rem;
+    }
+    &__contacts {
+		margin-bottom: 2.625rem;
+    }
+    &__pills {
+    	.nav-link {
+    		background-color: $primary-lighten-bg;
+    		padding: 0.375rem 3.125rem;
+    		border-radius: 0;
+    		color: $text-color-grey;
+    	}
+    }
+    &__tabs {
+    	margin-top: 2rem;
+    }
+    &__description {
+
+    }
+}
+
+@import "product-box-mediaqueries";

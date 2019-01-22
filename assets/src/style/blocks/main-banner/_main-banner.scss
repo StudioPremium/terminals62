@@ -6,9 +6,11 @@
 	padding-bottom: 6rem;
 	outline: none;
 	&__caption {
+		display: inline-block;
 		font-size: 3rem;
 		line-height: 1.2;
 		margin-bottom: 2rem;
+		font-weight: bold;
 	}
 	&__content {
 		padding-left: 36px;

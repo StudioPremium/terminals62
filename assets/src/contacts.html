@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--Импортируем header-->
+    //= template/header/header.html
+    <!--/Импортируем header-->
+	<div class="page page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="row">
+						<div class="col-12 order-2 order-lg-1">
+							<!--Импортируем секцию бокового меню-->
+							//= template/aside-menu/aside-menu.html
+							<!--/Импортируем секцию бокового меню-->
+						</div>
+						<div class="col-12 order-1 order-lg-2 d-none d-sm-block">
+							<!--Импортируем секцию с консультацией-->
+							//= template/consultation/consultation-sm.html
+							<!--/Импортируем секцию с консультацией-->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<!--Импортируем хлебные крошки-->
+					//= template/breadcrumb/breadcrumb.html
+					<!--/Импортируем хлебные крошки-->
+					<h1 class="h1">Контакты</h1>
+					<div class="contacts-content">
+						<div class="contacts-content__part contacts-content__part_left">
+							<div class="contacts-box">
+								<h5 class="contacts-box__caption">По вопросам сотрудничества</h5>
+								<ul class="contacts-box__list">
+									<li class="contacts-box__itm">
+										<a href="tel:+788000000000" class="contacts-box__text">8 800 000-00-00</a>
+									</li>
+									<li class="contacts-box__itm">
+										<a href="mailto:info@t-info.ru" class="contacts-box__text">info@t-info.ru</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contacts-box">
+								<h5 class="contacts-box__caption">Техническая поддержка</h5>
+								<ul class="contacts-box__list">
+									<li class="contacts-box__itm">
+										<a href="tel:+788000000000" class="contacts-box__text">8 800 000-00-00</a>
+									</li>
+									<li class="contacts-box__itm">
+										<a href="mailto:support@t-info.ru" class="contacts-box__text">support@t-info.ru</a>
+									</li>
+								</ul>
+							</div>
+							<div class="contacts-box">
+								<h5 class="contacts-box__caption">Юридическая консультация</h5>
+								<ul class="contacts-box__list">
+									<li class="contacts-box__itm">
+										<a href="tel:+788000000000" class="contacts-box__text">8 800 000-00-00</a>
+									</li>
+									<li class="contacts-box__itm">
+										<a href="mailto:info@t-info.ru" class="contacts-box__text">law@t-info.ru</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contacts-content__part contacts-content__part_right">
+							<div class="feedback-box contacts-feedback">
+								<h4 class="contacts-feedback__caption">
+									Написать <span class="color">нам</span>
+								</h4>
+								<form name="feedbackForm" action="feedback.php" class="feedback-box__form form" method="post" id="feedbackForm">
+									<input name="feedbackName" type="text" class="form__input form__input_space" placeholder="Ваше имя" required>
+									<input name="feedbackMail" type="email" class="form__input form__input_space" placeholder="Эл. почта" required>
+									<textarea name="feedbackMoreInfo" rows="5" class="form__input form__input_textarea form__input_space" placeholder="Вопрос"></textarea>
+								</form>
+								<button type="submit" form="feedbackForm" class="btn btn_sm btn-primary">Отправить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Импортируем секцию секцию обратной связи-->
+	//= template/section-feedback/section-feedback.html
+	<!--/Импортируем секцию обратной связи-->
+	<!--Импортируем футер-->
+	//= template/footer/footer.html
+	<!--/Импортируем футер-->
+	<!--Импортируем футер-->
+	//= template/modal/modal-feedback.html
+	<!--/Импортируем футер-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

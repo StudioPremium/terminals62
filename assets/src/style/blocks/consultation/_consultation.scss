@@ -1,0 +1,32 @@
+.consultation {
+	background-repeat: no-repeat;
+
+	&_sm {
+		min-height: 503px;
+		background-position-y: bottom;
+		background-position-x: center;
+		padding: 1.25rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $primary-lighten-bg;
+	}
+}
+
+.consultation-caption {
+	&__text {
+		display: inline-block;
+		font-size: 1rem;
+		color: $text-color-grey;
+		font-weight: normal;
+		&_first {
+			margin-bottom: 0.875rem;
+		}
+		&_second {
+			color: $primary;
+		}
+	}
+}
+
+@import "consultation-mediaqueries";

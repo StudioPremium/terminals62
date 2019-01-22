@@ -10,6 +10,8 @@
 //= ../../../node_modules/bootstrap/js/dist/modal.js
 //Выпадающая кнопка
 //= ../../../node_modules/bootstrap/js/dist/dropdown.js
+//Табы
+//= ../../../node_modules/bootstrap/js/dist/tab.js
 
 
 // Импортируем Fancybox.js

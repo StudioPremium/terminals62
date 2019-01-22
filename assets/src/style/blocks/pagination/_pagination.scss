@@ -1,0 +1,19 @@
+.pagination-box {
+	display: flex;
+	justify-content: center;
+	.page-item:first-child .page-link,
+	.page-item:last-child .page-link,
+	.page-link {
+		border-radius: 50%;
+	}
+	.page-item {
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

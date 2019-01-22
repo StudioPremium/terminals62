@@ -1,3 +1,11 @@
+.btn {
+    &_sm {
+        padding: calc(#{$btn-padding-y} * 0.75}) calc(#{$btn-padding-x} * 0.5});
+    }
+    &_xs {
+         padding: calc(#{$btn-padding-y} * 0.75}) calc(#{$btn-padding-x} * 0.35});
+    }
+}
 .btn-primary {
     box-shadow: $btn-box-shadow;
 }

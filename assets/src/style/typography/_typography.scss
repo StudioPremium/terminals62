@@ -1,4 +1,15 @@
+.h1 {
+	font-size: 1.875rem;
+	margin-bottom: 1.5rem;
+}
+
+.h2 {
+	font-size: 1.5rem;
+}
+
 .h3 {
 	font-size: 1.125rem;
 	margin-bottom: 2rem;
 }
+
+@import "typography-mediaqueries";

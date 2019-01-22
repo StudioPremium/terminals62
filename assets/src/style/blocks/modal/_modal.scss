@@ -17,33 +17,7 @@
 }
 
 .modal-feedback {
-	&__form {
-		display: flex;
-		flex-direction: column;
-	}
-	&__input {
-		background: $modal-input-bg;
-		border: $modal-input-border-width solid $modal-input-border-color;
-		color: $modal-input-color;
-		padding: $modal-input-padding-y $modal-input-padding-x;
-		font-style: italic;
-		margin-bottom: 1rem;
-		transition: $animation-time-md;
-		outline: none;
-		&:last-child {
-			
-		}
-		&:hover {
-	    	background-color: $primary-lighten-bg;
-	    }
-	    &:focus {
-	    	border-color: $primary;
-	    	background-color: $primary-lighten-bg;
-	    }
-		&_textarea {
-			resize: none;
-		}
-	}
+
 }
 
 .modal-body {

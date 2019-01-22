@@ -10,8 +10,8 @@
 
 //типографика
 @import "typography/typography";
-//обычные стили страницы типа главного баннера и др.
-
+//обычные стили страницы page, page-content и т.п.
+@import "common/page";
 
 //БЛОКИ 
 
@@ -41,11 +41,34 @@
 @import "blocks/link/link";
 //футер
 @import "blocks/footer/footer";
+//форма
+@import "blocks/form/form";
 // модальное окно обратной связи
 @import "blocks/modal/modal";
 // мобильное меню
 @import "blocks/mobile-menu/mobile-menu";
+// боковое меню
+@import "blocks/aside-menu/aside-menu";
+//боковой баннер
+@import "blocks/aside-banner/aside-banner";
+//блок обратной связи
+@import "blocks/feedback-box/feedback-box";
+//блок хлебных крошек
+@import "blocks/breadcrumb/breadcrumb";
+//информация о товаре
+@import "blocks/product-box/product-box";
+//контакты продавца
+@import "blocks/seller-contacts/seller-contacts";
+//секция с консультацией
+@import "blocks/consultation/consultation";
+// пагинация
+@import "blocks/pagination/pagination";
 
+//УТИЛИТЫ
+//пространство
+@import "utilities/utilities";
 //СТРАНИЦЫ
 
 @import "pages/index/index";
+@import "pages/catalog/catalog";
+@import "pages/contacts/contacts";
