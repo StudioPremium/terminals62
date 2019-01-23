@@ -36,13 +36,31 @@
 .contacts-feedback {
 	flex-direction: column;
 	align-items: flex-start;
+	padding: 2rem;
+	&__part {
+		width: 50%;
+		margin-bottom: 1rem;
+		&_left {
+			padding-right: 15px;
+		}
+		&_right {
+			padding-left: 15px;
+		}
+	} 
 }
 
 .contacts-feedback__caption {
 	font-size: 1.125rem;
 	font-style: italic;
-	font-weight: normal;
+	margin-bottom: 1rem;
 	.color {
 		color: $primary;
 	}
 }
+
+.contacts-feedback-parts {
+	display: flex;
+
+}
+
+@import "contacts-mediaqueries";

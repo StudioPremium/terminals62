@@ -77,8 +77,14 @@
 									Написать <span class="color">нам</span>
 								</h4>
 								<form name="feedbackForm" action="feedback.php" class="feedback-box__form form" method="post" id="feedbackForm">
-									<input name="feedbackName" type="text" class="form__input form__input_space" placeholder="Ваше имя" required>
-									<input name="feedbackMail" type="email" class="form__input form__input_space" placeholder="Эл. почта" required>
+									<div class="contacts-feedback-parts">
+										<div class="contacts-feedback__part contacts-feedback__part_left">
+											<input name="feedbackName" type="text" class="form__input form__input_space" placeholder="Ваше имя" required>
+										</div>
+										<div class="contacts-feedback__part contacts-feedback__part_right">
+											<input name="feedbackMail" type="email" class="form__input form__input_space" placeholder="Эл. почта" required>
+										</div>
+									</div>
 									<textarea name="feedbackMoreInfo" rows="5" class="form__input form__input_textarea form__input_space" placeholder="Вопрос"></textarea>
 								</form>
 								<button type="submit" form="feedbackForm" class="btn btn_sm btn-primary">Отправить</button>

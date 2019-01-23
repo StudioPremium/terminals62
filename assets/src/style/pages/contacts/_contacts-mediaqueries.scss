@@ -1,0 +1,43 @@
+@media (max-width: $screen-width-sm) {
+    .contacts-feedback-parts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts-feedback {
+
+        &__part {
+            width: 100%;
+            margin-bottom: 1rem;
+
+            &_left {
+                padding-right: 0;
+            }
+
+            &_right {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-width-xs) {
+	.contacts-content {
+		flex-direction: column;
+		&__part {
+			width: 100%;
+			&_left {
+				width: 100%;
+				padding-right: 0;
+			}
+			&_right {
+				width: 100%;
+				padding-left: 0;
+			}
+		}
+	}
+	.contacts-feedback {
+		padding: 2rem 1rem;
+		align-items: center;
+	}
+}
