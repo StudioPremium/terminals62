@@ -19,6 +19,7 @@
 @media (max-width: $screen-width-xs) {
 	.feedback-box {
 		flex-direction: column;
+		background-image: none !important;
 		&__part {
 			align-items: center;
 			&_left {

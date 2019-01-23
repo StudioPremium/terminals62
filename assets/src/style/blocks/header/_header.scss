@@ -17,6 +17,9 @@
 	background-image: url(../img/sprite.png);
 	background-size: auto;
 	background-position: -69px 3px;
+	&_white {
+		background-position: -105px 3px;
+	}
 }
 
 .header-search {

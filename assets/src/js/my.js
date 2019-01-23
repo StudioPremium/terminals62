@@ -10,3 +10,6 @@ $(document).ready(function() {
 
 // Импортируем sформу модального окна
 //= modal-feedback-form/modal-feedback-form.js
+
+// Импортируем sформу модального окна
+//= header/header.js

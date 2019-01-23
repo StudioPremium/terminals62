@@ -10,6 +10,13 @@
 		}
 	}
 }
+
+@media (max-width: $screen-width-sm) {
+	.heder-container-xs {
+		display: flex;
+		align-items: center;
+	}
+}
 @media (max-width: 450px) {
 	.header-entry .icon {
 		display: none;

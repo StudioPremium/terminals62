@@ -1,18 +1,20 @@
 <header class="header">
 	<div class="container">
 		<div class="row align-items-center mb-3 mb-md-0">
-			<div class="col-md-3 order-md-1 col-6 order-1">
-				<a href="/" class="header-logo">
-					<img src="img/header-logo.png" alt="Терминал инфо" class="header-logo__img img-fluid">
-				</a>
+			<div class="col-sm-3 col-12 order-md-1 col-6 order-1">
+				<div class="heder-container-xs"  id="nav-toggler-container-xs">
+					<a href="/" class="header-logo">
+						<img src="img/header-logo.png" alt="Терминал инфо" class="header-logo__img img-fluid">
+					</a>
+				</div>
 			</div>
-			<div class="col-md-6 order-md-2 order-3">
+			<div class="col-md-6 order-md-2 order-3 d-none d-sm-block">
 				<form name="search" action="search.php" class="header-search">
 					<i class="icon icon_search header-search__icon"></i>
 					<input name="searchQuery" type="text" class="header-search__input" placeholder="Поиск по сайту">
 				</form>
 			</div>
-			<div class="col-md-3 col-6 order-md-3 order-2">
+			<div class="col-md-3 col-6 order-md-3 order-2 d-none d-sm-block">
 				<div class="header-entry float-right">
 					<i class="icon icon_enter"></i>
 					<a href="#" class="header-entry__link header-entry__link_enter">Вход</a>
@@ -23,8 +25,8 @@
 		</div>
 	</div>
 	<nav class="navbar navbar-expand-xl header-navbar">
-		<div class="container">
-			<button class="navbar-toggler" type="button">
+		<div class="container" id="nav-toggler-container-sm">
+			<button id="nav-toggler-move" class="navbar-toggler" type="button">
 	    		<span class="navbar-toggler-icon"></span>
 			</button>
 		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -54,7 +56,7 @@
 	<div id="mobile-menu" class="mobile-menu">
         <div class="mobile-menu-header">
            	<button class="navbar-toggler" type="button">
-	    		<span class="navbar-toggler-icon"></span>
+	    		<span class="navbar-toggler-icon navbar-toggler-icon_white"></span>
 			</button>
         </div>
         <div id="mobile-menu-nav" class="mobile-menu-nav">
