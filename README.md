@@ -1,46 +1,24 @@
-# terminals62
+# terminal-info  
+## Ссылки  
 
-http://test.premium.tmweb.ru/terminal-info/build/index.html  
+https://u.to/NNGRFA 
 
-http://test.premium.tmweb.ru/terminal-info/build/arbitrage-practice.html  
+https://u.to/4gWSFA 
 
-http://test.premium.tmweb.ru/terminal-info/build/catalog.html  
+https://u.to/7QWSFA 
 
-http://test.premium.tmweb.ru/terminal-info/build/catalog-itm.html  
+https://u.to/-AWSFA 
 
-http://test.premium.tmweb.ru/terminal-info/build/catalog-parts.html  
+https://u.to/GQaSFA  
 
-http://test.premium.tmweb.ru/terminal-info/build/collection-terminals.html  
+https://u.to/KgaSFA 
 
-http://test.premium.tmweb.ru/terminal-info/build/contacts.html  
+https://u.to/WQaSFA  
 
-http://test.premium.tmweb.ru/terminal-info/build/legal-consultation.html  
+https://u.to/dwaSFA  
 
-http://test.premium.tmweb.ru/terminal-info/build/legal-information.html  
+https://u.to/ngaSFA  
 
-http://test.premium.tmweb.ru/terminal-info/build/news.html  
+https://u.to/swaSFA  
 
-http://test.premium.tmweb.ru/terminal-info/build/terminal-rental.html  
-
-
-https://u.to/9LGOFA  
-
-https://u.to/97GOFA  
-
-https://u.to/FLKOFA  
-
-https://u.to/MLKOFA  
-
-https://u.to/O7KOFA  
-
-https://u.to/SrKOFA  
-
-https://u.to/WrKOFA  
-
-https://u.to/Z7KOFA  
-
-https://u.to/dbKOFA  
-
-https://u.to/kbKOFA  
-
-https://u.to/obKOFA  
+https://u.to/wwaSFA
