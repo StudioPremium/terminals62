@@ -22,7 +22,7 @@ var path = {
     },
     prodactionSrc: {
         html:  'assets/build/*.html',
-        js:    'assets/build/js/main.js',
+        js:    ['assets/build/js/main.js', 'assets/build/js/critical.js'],
         css:   'assets/build/css/main.css',
         img:   'assets/build/img/**/*.*',
         fonts: 'assets/build/fonts/**/*.*'
@@ -37,7 +37,7 @@ var path = {
     },
     src: {
         html:  'assets/src/*.html',
-        js:    'assets/src/js/main.js',
+        js:    ['assets/src/js/main.js', 'assets/src/js/critical.js'],
         style: 'assets/src/style/main.scss',
         img:   'assets/src/img/**/*.*',
         fonts: 'assets/src/fonts/**/*.*'
