@@ -3,6 +3,9 @@
 // Импортируем jQuery
 //= ../../../node_modules/jquery/dist/jquery.js
 
+// Импортируем ленивую загрузку
+//= ../../../node_modules/lazyloadxt/dist/jquery.lazyloadxt.min.js
+
 // Импортируем необходимые js-файлы Bootstrap 4
 
 //= ../../../node_modules/bootstrap/js/dist/util.js

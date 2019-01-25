@@ -13,6 +13,21 @@ var autoprefixerList = [
 ];
 /* пути к исходным файлам (src), к готовым файлам (build), а также к тем, за изменениями которых нужно наблюдать (watch) */
 var path = {
+    prodaction: {
+        html:  'assets/prodaction/',
+        js:    'assets/prodaction/js/',
+        css:   'assets/prodaction/css/',
+        img:   'assets/prodaction/img/',
+        fonts: 'assets/prodaction/fonts/'
+    },
+    prodactionSrc: {
+        html:  'assets/build/*.html',
+        js:    'assets/build/js/main.js',
+        css:   'assets/build/css/main.css',
+        img:   'assets/build/img/**/*.*',
+        fonts: 'assets/build/fonts/**/*.*'
+    },
+    prodactionClean:     './assets/prodaction',
     build: {
         html:  'assets/build/',
         js:    'assets/build/js/',
@@ -58,6 +73,8 @@ var gulp = require('gulp'),  // подключаем Gulp
     imagemin = require('gulp-imagemin'), // плагин для сжатия PNG, JPEG, GIF и SVG изображений
     jpegrecompress = require('imagemin-jpeg-recompress'), // плагин для сжатия jpeg	
     pngquant = require('imagemin-pngquant'), // плагин для сжатия png
+    log = require('fancy-log'),
+    critical = require('critical').stream,
     del = require('del'); // плагин для удаления файлов и каталогов
 
 /* задачи */
@@ -130,6 +147,60 @@ gulp.task('clean:build', function () {
     del.sync(path.clean);
 });
 
+// сборка в продакш
+// выявление критических стлей
+/*
+gulp.task('critical', function (cb) {
+    critical.generate({
+        inline: true,
+        base: './assets/',
+        src: 'build/index.html',
+        dest: 'prodaction/index.html',
+        minify: true,
+        width: 1920,
+        height: 1080
+    });
+});
+*/
+
+// удаление каталога prodaction 
+gulp.task('clean:prodaction', function () {
+    del.sync(path.prodactionClean);
+});
+
+gulp.task('critical', function() {
+  return gulp
+    .src('assets/build/*.html')
+    .pipe(critical({base: 'assets/build/', inline: true, css: ['assets/build/css/main.css']}))
+    .on('error', function(err) {
+      log.error(err.message);
+    })
+    .pipe(gulp.dest('assets/prodaction'));
+});
+
+// перенос стилей из build в prodaction
+gulp.task('css:prodaction', function () {
+    gulp.src(path.prodactionSrc.css) // получим main.scss
+        .pipe(gulp.dest(path.prodaction.css)); // выгружаем в prodaction
+});
+
+// перенос js из build в prodaction
+gulp.task('js:prodaction', function () {
+    gulp.src(path.prodactionSrc.js) // получим файл main.js
+        .pipe(gulp.dest(path.prodaction.js));// положим готовый файл
+});
+
+// перенос шрифтов из build в prodaction
+gulp.task('fonts:prodaction', function() {
+    gulp.src(path.prodactionSrc.fonts)
+        .pipe(gulp.dest(path.prodaction.fonts));
+});
+
+// перенос картинок из build в продакшн
+gulp.task('image:prodaction', function () {
+    gulp.src(path.prodactionSrc.img) // путь с исходниками картинок
+        .pipe(gulp.dest(path.prodaction.img)); // выгрузка готовых файлов
+});
 // очистка кэша
 gulp.task('cache:clear', function () {
   cache.clearAll();
@@ -143,6 +214,15 @@ gulp.task('build', [
     'js:build',
     'fonts:build',
     'image:build'
+]);
+// продакшн
+gulp.task('prodaction', [
+    'clean:prodaction',
+    'critical',
+    'css:prodaction',
+    'js:prodaction',
+    'fonts:prodaction',
+    'image:prodaction'
 ]);
 
 // запуск задач при изменении файлов
